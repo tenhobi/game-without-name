@@ -1,0 +1,30 @@
+- name: bug
+  color: d73a4a
+  description: "Something isn't working"
+- name: enhancement
+  color: 0075ca
+  description: "New feature or request"
+- name: documentation
+  color: b000ca
+  description: "Improvements or additions to documentation"
+- name: question
+  color: fbbc3c
+  description: "Question"
+- name: help wanted
+  color: 008672
+  description: "Help wanted"
+- name: duplicate
+  color: cfd8d7
+  description: "This issue or pull request already exists"
+- name: wontfix
+  color: 000000
+  description: "This will not be worked on"
+- name: major
+  color:
+  description: "Used for PR as a major update after accept"
+- name: minor
+  color:
+  description: "Used for PR as a minor update after accept"
+- name: patch
+  color:
+  description: "Used for PR as a patch update after accept"
