@@ -12,9 +12,11 @@ Name of this game has yet to be invented. See [#3](https://github.com/tenhobi/ga
 
 This game is made using the [Flutter](https://flutter.dev) framework by Google. It uses [Cloud Firestore](https://firebase.google.com/products/firestore/) for communication and [Flare](https://www.2dimensions.com/about-flare) for some special effects.
 
+_Note:_ information will be added during the development.
+
 ## 🚀 How to start
 
-_Note:_ information will be added during the development.
+To run the mobile app using a connected device or a virtual device, download [Flutter](https://flutter.dev) and run `flutter run` command.
 
 ## 📃 License
 
