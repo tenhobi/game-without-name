@@ -1,6 +1,10 @@
 name: CI
 
-on: [push]
+on:
+  push:
+  pull_request:
+    type: closed
+
 
 jobs:
   build:
@@ -17,5 +21,15 @@ jobs:
         run: flutter pub get
       - name: Run Flutter tests
         run: flutter test
-#      - name: Build Android app
-#        run: flutter build apk
+      - name: Code Coverage
+        run: pub run test_coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.0.2
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          file: coverage/lcov.info
+      #      - name: Build Android app
+      #        run: flutter build apk
+      - name: Semver Release
+        uses: K-Phoen/semver-release-action@v1.0.3
+        if: github.event_name == 'pull_request'
