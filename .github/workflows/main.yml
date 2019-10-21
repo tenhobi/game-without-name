@@ -33,3 +33,5 @@ jobs:
         if: success() && github.event_name == 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_branch: master
